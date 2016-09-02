@@ -49,7 +49,6 @@ public class AKCollectionViewModel<ElementType : AKElementViewModel> : AKElement
     
     // containter private interface for changes
     private func applyChange(change: AKCollectionChange<ElementType>) {
-        print("super change \(change)")
         switch change {
         case .Insert(let element, let index):
             if index > -1 {
